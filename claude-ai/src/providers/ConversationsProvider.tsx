@@ -1,5 +1,5 @@
 import React from "react";
-import { Schema } from "@/../amplify/data/resource";
+import type { Schema } from "@/../amplify/data/resource";
 import { client } from "@/client";
 
 interface ConversationsContextType {
@@ -53,9 +53,8 @@ export const ConversationsProvider = ({
           if (index !== -1) {
             prev[index] = res.data;
             return [...prev];
-          } else {
-            return [res.data, ...prev];
           }
+          return [res.data, ...prev];
         });
       }
     });

@@ -1,6 +1,7 @@
 "use client";
 // https://github.com/vercel/next.js/discussions/53063
-import { Button, ColorMode } from "@aws-amplify/ui-react";
+import { Button } from "@aws-amplify/ui-react";
+import type { ColorMode } from "@aws-amplify/ui-react";
 import { useEffect, useState } from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
 

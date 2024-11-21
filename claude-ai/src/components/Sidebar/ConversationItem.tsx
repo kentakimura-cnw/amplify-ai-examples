@@ -18,7 +18,7 @@ import {
 } from "react-icons/lu";
 
 import { ConversationsContext } from "@/providers/ConversationsProvider";
-import { Conversation } from "@/client";
+import type { Conversation } from "@/client";
 import Link from "next/link";
 
 interface FormElements extends HTMLFormControlsCollection {
